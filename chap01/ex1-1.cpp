@@ -2,7 +2,7 @@
 
 int main()
 {
-	const std::string hello = "Hello";
-	const std::string message = hello + ", world" + "!"; 
-	return 0;
+    const std::string hello = "Hello";
+    const std::string message = hello + ", world" + "!"; 
+    return 0;
 }
