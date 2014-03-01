@@ -4,31 +4,34 @@
 int main()
 {
     std::cout << "Please enter your first name: ";
-    
+
     std::string name;
     std::cin >> name;
 
     const std::string greeting = "Hello, " + name + "!";
-    
-    int h_pad_user;
-    int v_pad_user;
+
+    std::string::size_type h_pad_user;
+    std::string::size_type v_pad_user;
     std::cout << "Horizontal padding: ";
     std::cin >> h_pad_user;
     std::cout << "Vertical padding: ";
     std::cin >> v_pad_user;
-    
-    const int h_pad = h_pad_user;
-    const int v_pad = v_pad_user;
-    
-    const int rows = v_pad * 2 + 3;
+
+    const std::string::size_type h_pad = h_pad_user;
+    const std::string::size_type v_pad = v_pad_user;
+
+    const std::string::size_type rows = v_pad * 2 + 3;
 
     const std::string::size_type cols = greeting.size() + h_pad * 2 + 2;
 
-    for (int r = 0; r != rows; ++r)
+    for (std::string::size_type r = 0; r != rows; ++r)
     {
         std::string::size_type c = 0;
         while (c != cols)
         {
+            // Note: the comparison (c == h_pad + 1) does not compile unless we
+            // add -Wno-sign-compare to the Makefile. The correct way would be
+            // to make h_pad be of the same type as c.
             if (r == v_pad + 1 && c == h_pad + 1)
             {
                 std::cout << greeting;

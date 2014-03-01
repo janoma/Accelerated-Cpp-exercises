@@ -4,12 +4,12 @@
 int main()
 {
     std::cout << "Please enter your first name: ";
-    
+
     std::string name;
     std::cin >> name;
 
     const std::string greeting = "Hello, " + name + "!";
-    
+
     const int h_pad = 5; // Horizontal padding
     const int v_pad = 2; // Vertical padding
     const int rows = v_pad * 2 + 3;
