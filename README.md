@@ -7,14 +7,23 @@ Structure
 The repository has the following structure:
 
     chap00/
+           .gitignore
+           Makefile
            ex0-1.cpp
            ex0-2.cpp
            ...
     chap01/
+           .gitignore
+           Makefile
            ex1-1.cpp
            ex1-2.cpp
            ...
     ...
+
+Note that each chapter directory contains `Makefile` and `.gitignore` files
+with specific settings for the chapter. Executables are ignored, and the
+Makefile contain instructions to compile only those exercises that are meant to
+compile.
 
 Notes from chapters
 ===================
