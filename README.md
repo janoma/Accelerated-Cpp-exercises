@@ -40,3 +40,7 @@ Chapter 1
 *   Exercises 2 and 5 don't compile, as they are intended to be examples of
     invalid programs.
 
+Chapter 2
+---------
+*   Exercise 3 was modified a little from the book so it doesn't compare a
+    signed and an unsigned integer.
