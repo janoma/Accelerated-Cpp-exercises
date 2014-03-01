@@ -1,2 +1,5 @@
 # Ignore object files
 **/*.o
+
+# Ignore compiled .ycm_extra_conf
+.ycm_extra_conf.pyc
