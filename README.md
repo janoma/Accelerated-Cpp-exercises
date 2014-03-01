@@ -44,3 +44,5 @@ Chapter 2
 ---------
 *   Exercise 3 was modified a little from the book so it doesn't compare a
     signed and an unsigned integer.
+
+<!--- vim: set formatoptions+=t -->
