@@ -5,8 +5,8 @@
 #include <vector>
 #include <algorithm>
 #include <stdexcept>
-#include "grade.h"
-#include "StudentInfo.h"
+
+#include "ex4-6/StudentInfo.h"
 
 int main()
 {
@@ -34,9 +34,8 @@ int main()
         // compute and write the grade
         try
         {
-            double final_grade = grade(students[i]);
             std::streamsize prec = std::cout.precision();
-            std::cout << std::setprecision(3) << final_grade
+            std::cout << std::setprecision(3) << students[i].grade
                       << std::setprecision(prec);
         }
         catch (std::domain_error e)

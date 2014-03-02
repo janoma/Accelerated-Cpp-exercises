@@ -1,6 +1,7 @@
 #include <iostream>
 #include <vector>
-#include "reader.h"
+
+#include "ex4-7/reader.h"
 
 double avg(std::vector<double> vec)
 {
