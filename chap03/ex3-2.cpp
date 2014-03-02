@@ -35,7 +35,7 @@ int main()
     for (int q = 0; q < 4; q++)
     {
         std::cout << "Quartile " << (q + 1) << ": ";
-        int i = size - 1 - q * s;
+        unsigned int i = size - 1 - q * s;
         while (i > size - 1 - q * s - s + 1 && i > 0)
         {
             std::cout << integers[i] << ", ";
