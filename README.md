@@ -48,4 +48,13 @@ Chapter 2
 *   Exercise 3 was modified a little from the book so it doesn't compare a
     signed and an unsigned integer.
 
+Chapter 3
+---------
+
+Chapter 4
+---------
+*   A few exercises have extra files that are compiled in separate folders.
+    However, the `main` files are all in `chap04/` directly. This might change
+    in the future.
+
 <!--- vim: set formatoptions+=t -->
