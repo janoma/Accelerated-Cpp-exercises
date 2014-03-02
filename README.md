@@ -6,6 +6,9 @@ Structure
 =========
 The repository has the following structure:
 
+    .gitignore
+    .ycm_extra_conf.py
+    README.md
     chap00/
            .gitignore
            Makefile
