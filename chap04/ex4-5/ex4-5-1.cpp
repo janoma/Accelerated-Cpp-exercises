@@ -4,11 +4,6 @@
 #include <algorithm>
 #include "reader.h"
 
-bool compare(std::string x, std::string y)
-{
-    return x < y;
-}
-
 int main()
 {
     std::vector<std::string> words;
