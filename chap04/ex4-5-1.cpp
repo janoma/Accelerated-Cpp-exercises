@@ -9,7 +9,7 @@ int main()
 {
     std::vector<std::string> words;
     read(std::cin, words);
-    
+
     // We count how many times each word ocurred
     sort(words.begin(), words.end());
 
@@ -18,7 +18,7 @@ int main()
 
     vec_sz size = words.size();
     str_sz maxlen = 0;
-    
+
     vec_sz i = 0;
     while (i != size)
     {
@@ -39,6 +39,6 @@ int main()
         std::cout << std::endl;
         i = j;
     }
-    
+
     return 0;
 }

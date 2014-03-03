@@ -17,11 +17,11 @@ int main()
 {
     int limit = 20;
     int col_len = len(limit) + 1;
-    
+
     for (int i = 1; i <= limit; ++i)
     {
         std::cout << i << std::string(col_len - len(i), ' ') << i * i << std::endl;
     }
-    
+
     return 0;
 }

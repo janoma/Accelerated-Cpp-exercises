@@ -16,7 +16,7 @@ std::istream& read(std::istream& is, StudentInfo& s)
 
     // read and store the student's name and midterm and final exam grades
     is >> s.name >> midterm >> final;
-    
+
     std::vector<double> homework;
 
     // read and store all the student's homework grades

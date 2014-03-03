@@ -18,7 +18,7 @@ int main()
 {
     double limit = 20.0;
     int col_len = len(limit) + 1;
-    
+
     for (double i = 1.1; i <= limit; ++i)
     {
         std::streamsize prec = std::cout.precision();
@@ -26,6 +26,6 @@ int main()
                   << std::string(col_len - len(i), ' ') << i * i
                   << std::setprecision(prec) << std::endl;
     }
-    
+
     return 0;
 }

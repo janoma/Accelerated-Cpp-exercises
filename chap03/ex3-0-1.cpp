@@ -44,7 +44,7 @@ int main()
 
     vec_sz mid = size / 2;
     double median = size % 2 == 0 ? (homework[mid] + homework[mid - 1]) / 2 : homework[mid];
-    
+
     // Write the result
     std::streamsize prec = std::cout.precision();
     std::cout << "Your final grade is " << std::setprecision(3)
