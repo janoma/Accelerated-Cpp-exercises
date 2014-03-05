@@ -5,8 +5,9 @@
 #include <vector>
 #include <algorithm>
 #include <stdexcept>
-#include "grade.h"
-#include "StudentInfo.h"
+
+#include "ex5-0-0/grade.h"
+#include "ex5-0-0/StudentInfo.h"
 
 // predicate to determine whether a student failed
 bool fgrade(const StudentInfo& s)
@@ -18,7 +19,7 @@ bool fgrade(const StudentInfo& s)
 std::vector<StudentInfo> extract_fails(std::vector<StudentInfo>& students)
 {
     std::vector<StudentInfo> pass, fail;
-    
+
     for (std::vector<StudentInfo>::size_type i = 0;
          i != students.size(); ++i)
     {
@@ -27,11 +28,10 @@ std::vector<StudentInfo> extract_fails(std::vector<StudentInfo>& students)
         else
             pass.push_back(students[i]);
 
-        students = pass;
-        return fail;
     }
+    students = pass;
+    return fail;
 }
-
 
 int main()
 {
@@ -74,4 +74,3 @@ int main()
 
     return 0;
 }
-
