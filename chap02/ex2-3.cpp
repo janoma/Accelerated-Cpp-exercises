@@ -8,7 +8,7 @@ int main()
     std::string name;
     std::cin >> name;
 
-    const std::string greeting = "Hello, " + name + "!";
+    std::string const greeting = "Hello, " + name + "!";
 
     std::string::size_type h_pad_user;
     std::string::size_type v_pad_user;
@@ -17,12 +17,12 @@ int main()
     std::cout << "Vertical padding: ";
     std::cin >> v_pad_user;
 
-    const std::string::size_type h_pad = h_pad_user;
-    const std::string::size_type v_pad = v_pad_user;
+    std::string::size_type const h_pad = h_pad_user;
+    std::string::size_type const v_pad = v_pad_user;
 
-    const std::string::size_type rows = v_pad * 2 + 3;
+    std::string::size_type const rows = v_pad * 2 + 3;
 
-    const std::string::size_type cols = greeting.size() + h_pad * 2 + 2;
+    std::string::size_type const cols = greeting.size() + h_pad * 2 + 2;
 
     for (std::string::size_type r = 0; r != rows; ++r)
     {

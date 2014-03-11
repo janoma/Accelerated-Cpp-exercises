@@ -5,7 +5,7 @@ double grade(double midterm, double final, double homework)
     return 0.2 * midterm + 0.4 * final + 0.4 * homework;
 }
 
-bool compare(const StudentInfo& x, const StudentInfo& y)
+bool compare(StudentInfo const& x, StudentInfo const& y)
 {
     return x.name < y.name;
 }

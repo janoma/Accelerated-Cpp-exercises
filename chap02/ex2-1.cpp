@@ -8,12 +8,12 @@ int main()
     std::string name;
     std::cin >> name;
 
-    const std::string greeting = "Hello, " + name + "!";
+    std::string const greeting = "Hello, " + name + "!";
 
-    const int pad = 1;
-    const int rows = pad * 2 + 1;
+    int const pad = 1;
+    int const rows = pad * 2 + 1;
 
-    const std::string::size_type cols = greeting.size() + 2;
+    std::string::size_type const cols = greeting.size() + 2;
 
     for (int r = 0; r != rows; ++r)
     {

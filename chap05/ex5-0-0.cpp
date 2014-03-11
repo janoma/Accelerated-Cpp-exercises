@@ -10,7 +10,7 @@
 #include "ex5-0-0/StudentInfo.h"
 
 // predicate to determine whether a student failed
-bool fgrade(const StudentInfo& s)
+bool fgrade(StudentInfo const& s)
 {
     return grade(s) < 60;
 }

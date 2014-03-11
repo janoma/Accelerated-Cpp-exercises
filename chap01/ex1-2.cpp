@@ -2,7 +2,7 @@
 
 int main()
 {
-    const std::string exclam = "!";
-    const std::string message = "Hello" + ", world" + exclam; // not valid 
+    std::string const exclam = "!";
+    std::string const message = "Hello" + ", world" + exclam; // not valid 
     return 0;
 }

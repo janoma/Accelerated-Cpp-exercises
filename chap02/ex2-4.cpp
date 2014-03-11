@@ -8,14 +8,14 @@ int main()
     std::string name;
     std::cin >> name;
 
-    const std::string greeting = "Hello, " + name + "!";
+    std::string const greeting = "Hello, " + name + "!";
 
-    const int pad = 1;
-    const int rows = pad * 2 + 3;
+    int const pad = 1;
+    int const rows = pad * 2 + 3;
 
-    const std::string::size_type cols = greeting.size() + pad * 2 + 2;
+    std::string::size_type const cols = greeting.size() + pad * 2 + 2;
 
-    const std::string spaces(cols - 2, ' ');
+    std::string const spaces(cols - 2, ' ');
     for (int r = 0; r != rows; ++r)
     {
         std::string::size_type c = 0;

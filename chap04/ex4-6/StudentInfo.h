@@ -15,7 +15,7 @@ struct StudentInfo
 
 
 double grade(double, double, double);
-bool compare(const StudentInfo&, const StudentInfo&);
+bool compare(StudentInfo const&, StudentInfo const&);
 std::istream& read(std::istream&, StudentInfo&);
 std::istream& read_hw(std::istream&, std::vector<double>&);
 

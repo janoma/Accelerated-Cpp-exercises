@@ -28,7 +28,7 @@ double median(std::vector<double> vec)
         return size % 2 == 0 ? (vec[mid] + vec[mid - 1]) / 2 : vec[mid];
 }
 
-double grade(double midterm, double final, const std::vector<double>& hw)
+double grade(double midterm, double final, std::vector<double> const& hw)
 {
     if (hw.size() == 0)
         throw std::domain_error("Student has done no homework");
@@ -72,12 +72,12 @@ std::istream& read(std::istream& is, StudentInfo& s)
     return is;
 }
 
-double grade(const StudentInfo& s)
+double grade(StudentInfo const& s)
 {
     return grade(s.midterm, s.final, s.homework);
 }
 
-bool compare(const StudentInfo& x, const StudentInfo& y)
+bool compare(StudentInfo const& x, StudentInfo const& y)
 {
     return x.name < y.name;
 }

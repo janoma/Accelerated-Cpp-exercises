@@ -8,13 +8,13 @@ int main()
     std::string name;
     std::cin >> name;
 
-    const std::string greeting = "Hello, " + name + "!";
+    std::string const greeting = "Hello, " + name + "!";
 
-    const int h_pad = 5; // Horizontal padding
-    const int v_pad = 2; // Vertical padding
-    const int rows = v_pad * 2 + 3;
+    int const h_pad = 5; // Horizontal padding
+    int const v_pad = 2; // Vertical padding
+    int const rows = v_pad * 2 + 3;
 
-    const std::string::size_type cols = greeting.size() + h_pad * 2 + 2;
+    std::string::size_type const cols = greeting.size() + h_pad * 2 + 2;
 
     for (int r = 0; r != rows; ++r)
     {
